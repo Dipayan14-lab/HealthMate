@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chatbot</title>
+    <link rel="stylesheet" href="open.css">
+</head>
+<body>
+
+    <button id="openChat">Live Chat</button>
+
+    <!-- Include Botpress chat scripts here -->
+    <script src="https://cdn.botpress.cloud/webchat/v1/inject.js"></script>
+    <script src="https://mediafiles.botpress.cloud/9c9caed6-2b63-4fd4-8467-ec62b9cf75cc/webchat/config.js" defer></script>
+
+    <!-- JavaScript to open the chat when button is clicked -->
+    <script>
+        document.getElementById("openChat").addEventListener("click", function() {
+            window.botpressWebChat.open();
+        });
+    </script>
+</body>
+</html>
